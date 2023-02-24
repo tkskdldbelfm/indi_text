@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>IndiVisual</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./index.css">
+  <!-- Demo styles -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #eee;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" id="pg1">
+        <span class="indi_logo">INDI:
+          <span class="visual_logo">VISUAL</span>
+        </span>
+        <lottie-player id="lottie1" src="./1page_motion.json" background="transparent" speed="1" loop autoplay>
+        </lottie-player>
+      </div>
+      <div class="swiper-slide" id="intro">
+
+        <div class="pp">
+          <div class="slime_bar"></div>
+          <p class="ppp">
+            독립되었다는 뜻의 "INDIE"와 시각을 뜻하는 "VISUAL"을 합치며<br />
+            "individual"의 개성있다는 의미와 동음어로<br />
+            각각의 개성이 모여 시각적으로 표현된다는 의미를 담았다.
+          </p>
+        </div>
+
+        <div class="pp1">
+          <p class="ppp1">
+            개인, 협력, 그리고 도전
+          </p>
+          <div class="slime_bar1"></div>
+        </div>
+
+        <span class="catchphrase">Try it Now.Try it Now.Try it Now.Try it Now.Try it Now.Try it Now.Try it Now.Try it
+          Now.
+        </span>
+      </div>
+      <div class="swiper-slide" id="ux_process">
+        <span class="process">Process</span>
+        <div class="contents">
+          <span class="title">UX Design</span>
+          <div class="list">
+            <div class="process_card">
+              <lottie-player class="lottie" src="./problem_mo.json" background="transparent" speed="1" loop autoplay>
+              </lottie-player>
+              <li class="subtitle">1. 문제 정의</li>
+              <li class="phrase">주제의 배경지식, 선정 이유 등으로 주제를 선정하고 문제를 분석/정의한다.</li>
+            </div>
+            <div class="process_card">
+              <lottie-player class="lottie" src="./target_mo.json" background="transparent" speed="1" loop autoplay>
+              </lottie-player>
+              <li class="subtitle">2. 타겟층 선정</li>
+              <li class="phrase">사용자가 누구인가? 무엇을 목표로 하는가? 등의 질문으로 사용자 행동패턴 분석</li>
+            </div>
+            <div class="process_card">
+              <lottie-player class="lottie" src="./personas_mo.json" background="transparent" speed="1" loop autoplay>
+              </lottie-player>
+              <li class="subtitle">3. 퍼소나</li>
+              <li class="phrase">
+                나이, 수입, 직업, 신상정보, 성격, 행동 동기, 시나리오 등 구체적인 퍼소나 제작
+              </li>
+            </div>
+            <div class="process_card">
+              <lottie-player class="lottie" src="./contents_mo.json" background="transparent" speed="1" loop autoplay>
+              </lottie-player>
+              <li class="subtitle">4. 목표를 위한 콘텐츠 설정</li>
+              <li class="phrase">목표에 적합한 콘텐츠, 이해하기 쉬운 콘텐츠 등으로 주요 콘텐츠, 보조 콘텐츠를 설정</li>
+            </div>
+            <div class="process_card">
+              <lottie-player class="lottie" src="./scenario_mo.json" background="transparent" speed="1" loop autoplay>
+              </lottie-player>
+              <li class="subtitle">5. 사용 시나리오 제작</li>
+              <li class="phrase">어떤 식으로 동작해야 하는가<br>사용자가 어떻게 상호작용하는가</li>
+            </div>
+            <div class="process_card">
+              <lottie-player class="lottie" src="./branding_mo.json" background="transparent" speed="1" loop autoplay>
+              </lottie-player>
+              <li class="subtitle">6. 서비스 브랜딩/UI Design</li>
+              <li class="phrase">브랜드 디자인 및 UI 디자인</li>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <span class="process">Process</span>
+        <div class="contents">
+          <span class="title">UI Design</span>
+          <div class="list">
+            <div class="process_card">
+              <lottie-player class="lottie" src="./ui1.json" background="transparent" speed="1" loop autoplay>
+              </lottie-player>
+              <li class="subtitle">1. 디자인 주제 선정</li>
+              <li class="phrase">주제의 배경지식, 선정 이유 등으로 주제를 선정하고 문제를 분석/정의한다.</li>
+            </div>
+            <div class="process_card">
+              <lottie-player class="lottie" src="./ui2.json" background="transparent" speed="1" loop autoplay>
+              </lottie-player>
+              <li class="subtitle">2. 디자인 목표 및 컨셉 설정</li>
+              <li class="phrase">디자인의 목표와 컨셉을 설정하고 이에 맞는 그래픽
+                요소 및 레이아웃 레퍼런스 탐색</li>
+            </div>
+            <div class="process_card">
+              <lottie-player class="lottie" src="./ui3.json" background="transparent" speed="1" loop autoplay>
+              </lottie-player>
+              <li class="subtitle">3. 구성 요소 정리</li>
+              <li class="phrase">
+                제목, 본문작성 및 정리</br>
+                컬러 및 비주얼 구성요소 정리
+              </li>
+            </div>
+            <div class="process_card">
+              <lottie-player class="lottie" src="./ui4.json" background="transparent" speed="1" loop autoplay>
+              </lottie-player>
+              <li class="subtitle">4.플로우 및 레이아웃 구성</li>
+              <li class="phrase">선별된 각종 시각정보들을 한정된 공간에
+                체계적으로 배치</li>
+            </div>
+            <div class="process_card">
+              <lottie-player class="lottie" src="./ui5.json" background="transparent" speed="1" loop autoplay>
+              </lottie-player>
+              <li class="subtitle">5. 인터페이스 디자인</li>
+              <li class="phrase">목표와 컨셉에 맞게 구성된 레이아웃에 인터렉션 등
+                비주얼 요소를 디자인</li>
+            </div>
+            <div class="process_card">
+              <lottie-player class="lottie" src="./ui6.json" background="transparent" speed="1" loop autoplay>
+              </lottie-player>
+              <li class="subtitle">6. 프로토타입 제작</li>
+              <li class="phrase">플로우 간 이동과 여러 인터렉션들을 실행해 볼 수 있도록 프로토타입 제작</li>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <span class="process">Process</span>
+        <div class="contents">
+          <span class="title">Front-end</span>
+          <div class="list">
+            <div class="process_card">
+              <lottie-player class="lottie" src="./problem_mo.json" background="transparent" speed="1" loop autoplay>
+              </lottie-player>
+              <li class="subtitle">1. 문제 정의</li>
+              <li class="phrase">주제의 배경지식, 선정 이유 등으로 주제를 선정하고 문제를 분석/정의한다.</li>
+            </div>
+            <div class="process_card">
+              <lottie-player class="lottie" src="./target_mo.json" background="transparent" speed="1" loop autoplay>
+              </lottie-player>
+              <li class="subtitle">2. 타겟층 선정</li>
+              <li class="phrase">사용자가 누구인가? 무엇을 목표로 하는가? 등의 질문으로 사용자 행동패턴 분석</li>
+            </div>
+            <div class="process_card">
+              <lottie-player class="lottie" src="./personas_mo.json" background="transparent" speed="1" loop autoplay>
+              </lottie-player>
+              <li class="subtitle">3. 퍼소나</li>
+              <li class="phrase">
+                나이, 수입, 직업, 신상정보, 성격, 행동 동기, 시나리오 등 구체적인 퍼소나 제작
+              </li>
+            </div>
+            <div class="process_card">
+              <lottie-player class="lottie" src="./contents_mo.json" background="transparent" speed="1" loop autoplay>
+              </lottie-player>
+              <li class="subtitle">4. 목표를 위한 콘텐츠 설정</li>
+              <li class="phrase">목표에 적합한 콘텐츠, 이해하기 쉬운 콘텐츠 등으로 주요 콘텐츠, 보조 콘텐츠를 설정</li>
+            </div>
+            <div class="process_card">
+              <lottie-player class="lottie" src="./problem_mo.json" background="transparent" speed="1" loop autoplay>
+              </lottie-player>
+              <li class="subtitle">5. 사용 시나리오 제작</li>
+              <li class="phrase">어떤 식으로 동작해야 하는가<br>사용자가 어떻게 상호작용하는가</li>
+            </div>
+            <div class="process_card">
+              <lottie-player class="lottie" src="./problem_mo.json" background="transparent" speed="1" loop autoplay>
+              </lottie-player>
+              <li class="subtitle">6. 서비스 브랜딩/UI Design</li>
+              <li class="phrase">브랜드 디자인 및 UI 디자인</li>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-slide">
+        <span class="projects">Projects</span>
+        <div class="project_container">
+          <div class="project_card">
+            <img src="./메인진짜.png" class="card_img">
+            <div class="card_ph">
+              <div class="project_title">로지텍 홈페이지 리디자인</div>
+              <div class="ph">로지텍 홈페이지 리디자인 작업물</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">personal work</div>
+      <div class="swiper-slide">footer</div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="./swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      direction: "vertical",
+      slidesPerView: 1,
+      spaceBetween: 0,
+      mousewheel: true,
+      speed: 1700,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+
+
+    });
+  </script>
+
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+  <script>
+    LottieInteractivity.create({
+      player: "#lottie1",
+      mode: "scroll",
+      container: "#intro", 0
+      actions: [
+        {
+          visibility: [0, 1],
+          type: 'seek',
+          frames: [0, 300],
+        }
+      ]
+    });
+  </script>
+</body>
+
+</html>

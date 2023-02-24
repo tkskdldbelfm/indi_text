@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>process</title>
+	<style id="applicationStylesheet" type="text/css">
+		.mediaViewInfo {
+			--web-view-name: process;
+			--web-view-id: process;
+			--web-scale-on-resize: true;
+			--web-enable-deep-linking: true;
+		}
+
+		:root {
+			--web-view-ids: process;
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			border: none;
+		}
+
+		#process {
+			position: absolute;
+			width: 1920px;
+			height: 1080px;
+			background-color: rgba(29, 29, 29, 1);
+			overflow: hidden;
+			--web-view-name: process;
+			--web-view-id: process;
+			--web-scale-on-resize: true;
+			--web-enable-deep-linking: true;
+		}
+
+		#PROCESS_be {
+			left: 240px;
+			top: 48px;
+			position: absolute;
+			overflow: visible;
+			width: 223px;
+			white-space: nowrap;
+			text-align: center;
+			font-family: Noto Sans KR;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 48px;
+			color: rgba(255, 255, 255, 1);
+		}
+
+		#n___ {
+			left: 252px;
+			top: 456px;
+			position: absolute;
+			overflow: visible;
+			width: 122px;
+			white-space: nowrap;
+			text-align: left;
+			font-family: Noto Sans KR;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 24px;
+			color: rgba(255, 255, 255, 1);
+		}
+
+		#n_________ {
+			left: 252px;
+			top: 498px;
+			position: absolute;
+			overflow: visible;
+			width: 424px;
+			white-space: nowrap;
+			text-align: left;
+			font-family: Noto Sans KR;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 20px;
+			color: rgba(222, 222, 222, 1);
+		}
+
+		#n____bh {
+			left: 742px;
+			top: 456px;
+			position: absolute;
+			overflow: visible;
+			width: 144px;
+			white-space: nowrap;
+			text-align: left;
+			font-family: Noto Sans KR;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 24px;
+			color: rgba(255, 255, 255, 1);
+		}
+
+		#n__________ {
+			left: 742px;
+			top: 498px;
+			position: absolute;
+			overflow: visible;
+			width: 433px;
+			white-space: nowrap;
+			text-align: left;
+			font-family: Noto Sans KR;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 20px;
+			color: rgba(222, 222, 222, 1);
+		}
+
+		#n__ {
+			left: 1232px;
+			top: 456px;
+			position: absolute;
+			overflow: visible;
+			width: 95px;
+			white-space: nowrap;
+			text-align: left;
+			font-family: Noto Sans KR;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 24px;
+			color: rgba(255, 255, 255, 1);
+		}
+
+		#n___________ {
+			left: 1232px;
+			top: 498px;
+			position: absolute;
+			overflow: visible;
+			width: 434px;
+			white-space: nowrap;
+			text-align: left;
+			font-family: Noto Sans KR;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 20px;
+			color: rgba(222, 222, 222, 1);
+		}
+
+		#n_____ {
+			left: 252px;
+			top: 886px;
+			position: absolute;
+			overflow: visible;
+			width: 266px;
+			white-space: nowrap;
+			text-align: left;
+			font-family: Noto Sans KR;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 24px;
+			color: rgba(255, 255, 255, 1);
+		}
+
+		#n____________bm {
+			left: 252px;
+			top: 928px;
+			position: absolute;
+			overflow: visible;
+			width: 420px;
+			white-space: nowrap;
+			text-align: left;
+			font-family: Noto Sans KR;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 20px;
+			color: rgba(222, 222, 222, 1);
+		}
+
+		#n______ {
+			left: 742px;
+			top: 886px;
+			position: absolute;
+			overflow: visible;
+			width: 377px;
+			white-space: nowrap;
+			text-align: left;
+			font-family: Noto Sans KR;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 24px;
+			color: rgba(255, 255, 255, 1);
+		}
+
+		#n_______bo {
+			left: 742px;
+			top: 928px;
+			position: absolute;
+			overflow: visible;
+			width: 268px;
+			white-space: nowrap;
+			text-align: left;
+			font-family: Noto Sans KR;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 20px;
+			color: rgba(222, 222, 222, 1);
+		}
+
+		#n___UI_Design {
+			left: 1232px;
+			top: 886px;
+			position: absolute;
+			overflow: visible;
+			width: 287px;
+			white-space: nowrap;
+			text-align: left;
+			font-family: Noto Sans KR;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 24px;
+			color: rgba(255, 255, 255, 1);
+		}
+
+		#n___UI_ {
+			left: 1232px;
+			top: 928px;
+			position: absolute;
+			overflow: visible;
+			width: 223px;
+			white-space: nowrap;
+			text-align: left;
+			font-family: Noto Sans KR;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 20px;
+			color: rgba(222, 222, 222, 1);
+		}
+
+		#n_0564b57-d686-404b-99e5-a8e0d {
+			fill: transparent;
+		}
+
+		.n_0564b57-d686-404b-99e5-a8e0d {
+			overflow: hidden;
+			position: absolute;
+			width: 460px;
+			height: 260px;
+			left: 240px;
+			top: 184px;
+			transform: matrix(1, 0, 0, 1, 0, 0);
+		}
+
+		#n_0564b57-d686-404b-99e5-a8e0d_bs {
+			fill: transparent;
+		}
+
+		.n_0564b57-d686-404b-99e5-a8e0d_bs {
+			overflow: hidden;
+			position: absolute;
+			width: 460px;
+			height: 260px;
+			left: 240px;
+			top: 614px;
+			transform: matrix(1, 0, 0, 1, 0, 0);
+		}
+
+		#n_0564b57-d686-404b-99e5-a8e0d_bt {
+			fill: transparent;
+		}
+
+		.n_0564b57-d686-404b-99e5-a8e0d_bt {
+			overflow: hidden;
+			position: absolute;
+			width: 460px;
+			height: 260px;
+			left: 730px;
+			top: 184px;
+			transform: matrix(1, 0, 0, 1, 0, 0);
+		}
+
+		#n_0564b57-d686-404b-99e5-a8e0d_bu {
+			fill: transparent;
+		}
+
+		.n_0564b57-d686-404b-99e5-a8e0d_bu {
+			overflow: hidden;
+			position: absolute;
+			width: 460px;
+			height: 260px;
+			left: 730px;
+			top: 614px;
+			transform: matrix(1, 0, 0, 1, 0, 0);
+		}
+
+		#n_0564b57-d686-404b-99e5-a8e0d_bv {
+			fill: transparent;
+		}
+
+		.n_0564b57-d686-404b-99e5-a8e0d_bv {
+			overflow: hidden;
+			position: absolute;
+			width: 460px;
+			height: 260px;
+			left: 1220px;
+			top: 184px;
+			transform: matrix(1, 0, 0, 1, 0, 0);
+		}
+
+		#n_0564b57-d686-404b-99e5-a8e0d_bw {
+			fill: transparent;
+		}
+
+		.n_0564b57-d686-404b-99e5-a8e0d_bw {
+			overflow: hidden;
+			position: absolute;
+			width: 460px;
+			height: 260px;
+			left: 1220px;
+			top: 614px;
+			transform: matrix(1, 0, 0, 1, 0, 0);
+		}
+	</style>
+</head>
+
+<body>
+	<div id="process">
+		<div id="PROCESS_be">
+			<span>PROCESS</span>
+		</div>
+		<div id="n___">
+			<span>1. 문제 정의</span>
+		</div>
+		<div id="n_________">
+			<span>주제의 배경지식, 선정 이유 등으로 주제를 선정하고 <br />문제를 분석/정의한다.</span>
+		</div>
+		<div id="n____bh">
+			<span>2. 타겟층 선정</span>
+		</div>
+		<div id="n__________">
+			<span>사용자가 누구인가? 무엇을 목표로 하는가? 등의 질문<br />으로 사용자 행동패턴 분석</span>
+		</div>
+		<div id="n__">
+			<span>3. 퍼소나</span>
+		</div>
+		<div id="n___________">
+			<span>나이, 수입, 직업, 신상정보, 성격, 행동 동기, 시나리오<br />등 구체적인 퍼소나 제작</span>
+		</div>
+		<div id="n_____">
+			<span>4. 목표를 위한 콘텐츠 설정</span>
+		</div>
+		<div id="n____________bm">
+			<span>목표에 적합한 콘텐츠, 이해하기 쉬운 콘텐츠 등으로<br />주요 콘텐츠, 보조 콘텐츠를 설정</span>
+		</div>
+		<div id="n______">
+			<span>5. 와이어프레임 & 사용 시나리오 제작</span>
+		</div>
+		<div id="n_______bo">
+			<span>어떤 식으로 동작해야 하는가<br />사용자가 어떻게 상호작용하는가</span>
+		</div>
+		<div id="n___UI_Design">
+			<span>6. 서비스 브랜딩/UI Design</span>
+		</div>
+		<div id="n___UI_">
+			<span>브랜드 디자인 및 UI 디자인</span>
+		</div>
+		<svg class="n_0564b57-d686-404b-99e5-a8e0d" viewBox="0 0 460 260">
+			<path id="n_0564b57-d686-404b-99e5-a8e0d" d="null">
+			</path>
+		</svg>
+		<svg class="n_0564b57-d686-404b-99e5-a8e0d_bs" viewBox="0 0 460 260">
+			<path id="n_0564b57-d686-404b-99e5-a8e0d_bs" d="null">
+			</path>
+		</svg>
+		<svg class="n_0564b57-d686-404b-99e5-a8e0d_bt" viewBox="0 0 460 260">
+			<path id="n_0564b57-d686-404b-99e5-a8e0d_bt" d="null">
+			</path>
+		</svg>
+		<svg class="n_0564b57-d686-404b-99e5-a8e0d_bu" viewBox="0 0 460 260">
+			<path id="n_0564b57-d686-404b-99e5-a8e0d_bu" d="null">
+			</path>
+		</svg>
+		<svg class="n_0564b57-d686-404b-99e5-a8e0d_bv" viewBox="0 0 460 260">
+			<path id="n_0564b57-d686-404b-99e5-a8e0d_bv" d="null">
+			</path>
+		</svg>
+		<svg class="n_0564b57-d686-404b-99e5-a8e0d_bw" viewBox="0 0 460 260">
+			<path id="n_0564b57-d686-404b-99e5-a8e0d_bw" d="null">
+			</path>
+		</svg>
+	</div>
+</body>
+
+</html>
